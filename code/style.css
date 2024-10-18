@@ -1,0 +1,322 @@
+@font-face {
+    font-family: nunito sans;
+    src: url("../assets/font/NunitoSans-Regular.ttf");
+}
+
+a {
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+}
+
+button {
+    cursor: pointer;
+}
+
+.socials img {
+    margin: auto 5px;
+}
+
+a :hover{
+    color: hsl(136, 65%, 51%);
+}
+
+body {
+    font-family: nunito sans;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.container ,.services,.article{
+    width: 95%;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.header-intro {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: center;
+    background: white;
+   
+}
+
+.sidebar {
+    display: none;
+    transition: .4s ease;
+}
+
+.sidebar button {
+    display: none;
+}
+
+.sidebar.active {
+    display: block;
+    transition: .4s ease;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.menu,.close {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+}
+
+.close {
+    display: none;
+}
+ 
+.logo {
+    left: 20px;
+    position: absolute;
+    z-index: 3;
+}
+
+.bg-intro {
+    width: 97vw;
+    margin-left: -8px;
+    margin-top: 20px;
+}
+
+.intro-text {
+    width: 95%;
+    padding: 10px;
+    margin: 30px 10px 0px 0px;
+    text-align: center;
+}
+
+h2,h3 {
+    color: hsl(233, 26%, 24%)
+}
+
+p {
+    color:  hsl(233, 8%, 62%);
+}
+
+.intro-text button {
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    padding-inline: 20px;
+    outline: none;
+    font-family: nunito sans;
+    border: 1px solid hsl(192, 70%, 51%);
+    border-radius: 30px;
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%) ,hsl(192, 70%, 51%)) ;
+}
+
+.mockups {
+    margin-left: 10%;
+    justify-content: center;
+}
+
+small {
+    color:  hsl(232, 32%, 86%);
+    margin-top: 10px;
+}
+
+.article div img {
+    border-radius: 5px;
+    width: 100%;
+    height: 40%;
+}
+
+.article div {
+    width: 100%;
+}
+
+footer {
+    padding-block: 5px;
+    text-align: center;
+    width: 103%;
+    margin-left: -7px;
+    background-color:hsl(233, 26%, 24%) ;
+}
+
+.article-heading {
+    margin: 0px 20px;
+}
+
+footer li {
+    list-style: none;
+    color:  hsl(233, 8%, 62%);
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+footer li :hover {
+    color: hsl(136, 65%, 51%);
+}
+
+footer button {
+    display: none;
+    cursor: pointer;
+}
+
+.logo-text {
+    position: absolute;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-top: -50px;
+    color: hsl(0, 0%, 100%);
+    left: 42%;
+    font-size: 18px;
+}
+
+section ,.easy-reason{
+    text-align: center;
+}
+
+.footer-logo {
+    margin-top: 30px;
+}
+
+@media  screen and (max-width:375px) {
+    .bg-intro {
+        background-image: url('../assets/images/bg-intro-mobile.svg')
+    }
+    footer button {
+        display: none;
+    } 
+   
+}
+
+@media screen and (min-width : 376px) {
+    .bg-intro {
+        background-image: url('../assets/images/bg-intro-desktop.svg')
+    }
+}
+
+@media screen and (min-width:800px) {
+    .bg-intro {
+        background-image: url('../assets/images/bg-intro-desktop.svg')
+    }
+    .main-content {
+        display:flex;
+        flex-direction: row-reverse;
+        margin-top: 5%;
+    }
+    .intro-text ,section {
+        text-align: start;
+    }
+    .sidebar {
+        display: block;
+        position: absolute;
+        top: 13px;
+        right: 0px;
+    }
+    .sidebar button {
+        display: block;
+        color: hsl(0, 0%, 100%);
+        padding: 10px;
+        padding-inline: 20px;
+        outline: none;
+        font-family: nunito sans;
+        border: 1px solid hsl(192, 70%, 51%);
+        border-radius: 30px;
+        background-image: linear-gradient(to right,hsl(136, 65%, 51%) ,hsl(192, 70%, 51%)) ;
+    }
+    .sidebar ul li {
+        display: inline-flex;
+        margin: 0px 10px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .sidebar a:hover{
+        border-bottom: 2px solid green;
+    }
+    .menu {
+        display: none;
+    }
+    .services,.article {
+        width: 95%;
+        padding: 10px;
+        margin: 0px 10px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .easy-reason {
+        width: 95%;
+        padding: 10px;
+        margin: 0px 10px;
+        display: grid;
+        grid-template-columns: 50%;
+        margin-top: -20%;
+        margin-bottom: 10%;
+        text-align: start;
+    }
+    aside {
+        padding: 20px;
+    }
+    footer {
+        display: grid;
+        text-align: start;
+        padding-block: none;
+        width: 95%;
+        margin-left: -20px;
+        margin-top: 50px;
+        gap: 5px;
+        padding: 20px;
+        padding-inline: 60px;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    footer li {
+        margin:10px auto;
+    }
+    footer button {
+        position: absolute;
+        display: block;
+        right: 20px;
+        color: hsl(0, 0%, 100%);
+        padding: 10px;
+        padding-inline: 20px;
+        outline: none;
+        font-family: nunito sans;
+        border: 1px solid hsl(192, 70%, 51%);
+        border-radius: 30px;
+        background-image: linear-gradient(to right,hsl(136, 65%, 51%) ,hsl(192, 70%, 51%)) ;
+    }
+    .footer-logo {
+        margin-top: auto;
+        margin-bottom: 40px;
+    }
+    .logo-text {
+        left: 6%;
+        margin-top: -78px;
+    }
+    .copyright {
+        position: absolute;
+        margin-top: 85px;
+        right: 20px;
+        font-size: small;
+        cursor: pointer;
+    }
+    a :hover{
+        color: hsl(233, 8%, 62%);
+    }
+   
+}
+
+@media screen and (max-width : 768px) {
+    .sidebar.active {
+        background-color: hsl(0, 0%, 100%);
+        width: 80%;
+        padding: 10px;
+        border: 1px solid hsl(0, 0%, 100%);
+        border-radius: 3px;
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        z-index: 4;
+        color: hsl(233, 26%, 24%);
+    }
+    .sidebar ul li {
+        margin: 10px 30%;
+        justify-items: center;
+    }
+    .copyright {
+        font-size: small;
+    }
+}
